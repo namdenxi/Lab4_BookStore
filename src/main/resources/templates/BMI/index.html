@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI</title>
+</head>
+<body>
+<style>
+    body {
+        margin:0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    div {
+        margin: 15px;
+    }
+</style>
+<form action="">
+
+<div style="border-radius: 15px; border: 1px solid #333">
+    <div>
+    <label for="Age">Age: </label>
+    <input type="number" name="Age" id="Age" style="margin: 0 15px 0 5px;">
+    <label>ages: 2-120</label>
+    </div>
+    <div>
+    <label>Male: </label>
+    <input type="radio" name="Gender" value="Male">
+    <label>Female: </label>
+    <input type="radio" name="Gender" value="Female">
+    </div>
+    <div>
+        <label for="Height">Height</label>
+        <input type="number" name="Height" id="Height">
+        <label>cm</label>
+    </div>
+    <div>
+        <label for="Weight">Weight</label>
+        <input type="number" name="Weight" id="Weight">
+        <label>kg</label>
+    </div>
+    <div style="text-align:center">
+        <button type="submit">Calculate</button>
+        <button type="reset">Clear</button>
+    </div>
+</div>
+
+</form>
+</body>
+</html>

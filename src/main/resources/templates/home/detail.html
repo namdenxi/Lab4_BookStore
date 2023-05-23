@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="Layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detail</title>
+</head>
+<body>
+<div layout:fragment="body-content">
+    <div class="templatemo_product_box" style="margin: 5px">
+        <h1 th:text="${book.Title}"> (<span th:text="${book.Author}"></span>)</h1>
+        <img th:src="'/'+${book.Cover}" alt="image" height="120px"/>
+        <div class="product_info">
+            <p>Etiam luctus. Quisque facilisis suscipit elit. Curabitur...</p>
+            <h3 th:text="${book.Price}"></h3>
+            <div class="buy_now_button"><a href="#">Buy Now</a></div>
+            <div class="detail_button"><a th:href="'delete/'+${book.ID}">Remove</a></div>
+        </div>
+        <div class="cleaner">&nbsp;</div>
+    </div>
+    <div class="cleaner_with_width">&nbsp;</div>
+</div>
+</body>
+</html>
